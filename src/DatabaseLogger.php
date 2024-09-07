@@ -1,10 +1,10 @@
 <?php
 
-namespace Yoeriboven\LaravelLogDb;
+namespace Jarredcain\LaravelLogJobsDb;
 
 use Monolog\Logger;
 
-class DatabaseLogger
+class DatabaseLogJobs
 {
     /**
      * Create a custom Monolog instance.
@@ -14,7 +14,7 @@ class DatabaseLogger
     public function __invoke(array $config)
     {
         return new Logger('Database', [
-            new DatabaseHandler(),
+            new DatabaseLogJobHandler(),
         ]);
     }
 }

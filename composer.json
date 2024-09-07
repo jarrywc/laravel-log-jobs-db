@@ -1,17 +1,22 @@
 {
-    "name": "yoeriboven/laravel-log-db",
-    "description": "A database driver for logging with Laravel",
+    "name": "jarrywc/laravel-log-jobs-db",
+    "description": "A database driver for logging jobs with Laravel",
     "keywords": [
-        "yoeriboven",
+        "jarrywc",
         "laravel",
         "laravel-log-db"
     ],
-    "homepage": "https://github.com/yoeriboven/laravel-log-db",
+    "homepage": "https://github.com/jarrywc/laravel-log-jobs-db",
     "license": "MIT",
     "authors": [
         {
             "name": "Yoeri Boven",
             "email": "yoeriboven@msn.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Jarred Cain",
+            "email": "jarrywc@proton.me",
             "role": "Developer"
         }
     ],
@@ -30,12 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Yoeriboven\\LaravelLogDb\\": "src"
+            "Jarredcain\\LaravelLogJobsDb\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yoeriboven\\LaravelLogDb\\Tests\\": "tests"
+            "Jarredcain\\LaravelLogJobsDb\\Tests\\": "tests"
         }
     },
     "config": {
@@ -47,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Yoeriboven\\LaravelLogDb\\DatabaseLoggerServiceProvider"
+                "Jarredcain\\LaravelLogJobsDb\\DatabaseLogJobsServiceProvider"
             ]
         }
     },

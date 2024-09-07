@@ -1,11 +1,11 @@
 <?php
 
-namespace Yoeriboven\LaravelLogDb;
+namespace Jarredcain\LaravelLogJobsDb;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class DatabaseLoggerServiceProvider extends PackageServiceProvider
+class DatabaseLogJobsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -15,7 +15,7 @@ class DatabaseLoggerServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-log-db')
-            ->hasMigration('create_laravel_log_table');
+            ->name('laravel-log-jobs-db')
+            ->hasMigration('create_laravel_log_jobs_table');
     }
 }

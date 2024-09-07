@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoeriboven\LaravelLogDb;
+namespace Jarredcain\LaravelLogJobsDb;
 
 use Exception;
 use Illuminate\Support\Facades\Log;
@@ -8,7 +8,7 @@ use Monolog\Handler\AbstractProcessingHandler;
 use Throwable;
 use Yoeriboven\LaravelLogDb\Models\LogMessage;
 
-class DatabaseHandler extends AbstractProcessingHandler
+class DatabaseLogJobHandler extends AbstractProcessingHandler
 {
     /**
      * @inheritDoc
